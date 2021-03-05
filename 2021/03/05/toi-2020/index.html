@@ -6,7 +6,7 @@
 <meta property="og:description" content="題單 昨天看到蛋餅把去年初選的題目都丟到TIOJ了 最近也把pE精神掉了，想說就寫寫看，沒多久就把五題都寫完了 於是就來打個題解吧 雖然只剩下兩天就是ㄌ&#x3D; &#x3D;                     pA        連結                     題解        簽到題，直接做就好了                     code        12345678910111">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-03-04T23:56:25.000Z">
-<meta property="article:modified_time" content="2021-03-05T01:06:18.284Z">
+<meta property="article:modified_time" content="2021-03-05T01:28:31.291Z">
 <meta property="article:author" content="abc864197532">
 <meta property="article:tag" content="TOI, TIOJ">
 <meta name="twitter:card" content="summary"><title>TOI 2020 初選小題解 | abc's Blog</title><link ref="canonical" href="https://abc864197532.github.io/2021/03/05/toi-2020/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.1"><script>var Stun = window.Stun || {};
@@ -62,8 +62,11 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
         <h3 id="題解-2"   >
           <a href="#題解-2" class="heading-link"><i class="fas fa-link"></i></a>題解</h3>
       
-<p>這題我是用重剖寫的，寫完發現單純樹DP也可做，作法其實差不多<br />
-這裡就講一下重剖做法</p>
+<p>這題我是用重剖寫的，寫完發現單純樹DP也可做，作法其實差不多</p>
+
+        <h4 id="重剖"   >
+          <a href="#重剖" class="heading-link"><i class="fas fa-link"></i></a>重剖</h4>
+      
 <p>重剖的時候，目標是要求出所有過重心的最長與嚴格次長<br />
 方法就是對於重心的每一棵子樹，算出這個子樹的最長與嚴格次長<br />
 合併的時候就用類似找樹直徑的做法，維護目前已經跑過的子樹中，最長與嚴格次長的距離<br />
@@ -75,6 +78,15 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </ol>
 <p>這樣做完就結束了~<br />
 實作上可能有些細節需要注意，需要好好維護「嚴格」次長</p>
+
+        <h4 id="樹dp"   >
+          <a href="#樹dp" class="heading-link"><i class="fas fa-link"></i></a>樹DP</h4>
+      
+<p>樹DP的做法其實跟找直徑很類似<br />
+就從原本只維護最長改成多維護一個嚴格次長<br />
+合併的方法跟前面重剖一樣，分成三種case更新<br />
+好好維護完就結束了</p>
+<p>實作上一樣要好好處理「嚴格」的問題</p>
 
         <h3 id="code-2"   >
           <a href="#code-2" class="heading-link"><i class="fas fa-link"></i></a>code</h3>
@@ -181,7 +193,9 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
           題解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">1.2.</span> <span class="toc-text">
           code</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pb"><span class="toc-number">2.</span> <span class="toc-text">
           pB</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%8C%E8%A7%A3-2"><span class="toc-number">2.1.</span> <span class="toc-text">
-          題解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code-2"><span class="toc-number">2.2.</span> <span class="toc-text">
+          題解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E5%89%96"><span class="toc-number">2.1.1.</span> <span class="toc-text">
+          重剖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%B9dp"><span class="toc-number">2.1.2.</span> <span class="toc-text">
+          樹DP</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code-2"><span class="toc-number">2.2.</span> <span class="toc-text">
           code</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pc"><span class="toc-number">3.</span> <span class="toc-text">
           pC</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%8C%E8%A7%A3-3"><span class="toc-number">3.1.</span> <span class="toc-text">
           題解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code-3"><span class="toc-number">3.2.</span> <span class="toc-text">
