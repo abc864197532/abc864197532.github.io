@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icon16.png?v=2.6.1" type="image/png" sizes="16x16"><link rel="icon" href="/images/icon32.png?v=2.6.1" type="image/png" sizes="32x32"><meta name="description" content="嗨(?) 因為我還蠻喜歡cses這個judge的題目 尤其是additional problems裡的題目，每題都很酷也讓我學到不少:D 不過好像因為其他區比較熱門 + additional沒提示，導致沒人想寫這區的題目;w; 所以我就想說來打個這區的題解，看能不能幫助這一區提升人氣(? (雖然我不覺得會有人看我的blog就4了QQ) 不過因為我很爛，很多題都還沒寫出來，所以這裡只會打我有寫出的題">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSES additional problems solution (殘缺 + 施工中)">
+<meta property="og:url" content="https://abc864197532.github.io/2021/04/05/cses-additional-sol/index.html">
+<meta property="og:site_name" content="abc&#39;s Blog">
+<meta property="og:description" content="嗨(?) 因為我還蠻喜歡cses這個judge的題目 尤其是additional problems裡的題目，每題都很酷也讓我學到不少:D 不過好像因為其他區比較熱門 + additional沒提示，導致沒人想寫這區的題目;w; 所以我就想說來打個這區的題解，看能不能幫助這一區提升人氣(? (雖然我不覺得會有人看我的blog就4了QQ) 不過因為我很爛，很多題都還沒寫出來，所以這裡只會打我有寫出的題">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-05T09:30:46.000Z">
+<meta property="article:modified_time" content="2021-04-05T12:34:25.740Z">
+<meta property="article:author" content="abc864197532">
+<meta property="article:tag" content="CSES">
+<meta name="twitter:card" content="summary"><title>CSES additional problems solution (殘缺 + 施工中) | abc's Blog</title><link ref="canonical" href="https://abc864197532.github.io/2021/04/05/cses-additional-sol/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.1"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":false,"scrollDownIcon":false},
+  postWidget: undefined,
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"ocean","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner header-inner--height header-inner--bgcolor"><nav class="header-nav header-nav--sticky"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">Tags</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="far fa-address-card"></i></span><span class="header-nav-menu-item__text">About</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">CSES additional problems solution (殘缺 + 施工中)</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-04-05</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-04-05</span></span></div></header><div class="post-body"><p>嗨(?)<br />
+因為我還蠻喜歡<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://cses.fi/problemset/list/" >cses</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>這個judge的題目<br />
+尤其是additional problems裡的題目，每題都很酷也讓我學到不少:D<br />
+不過好像因為其他區比較熱門 + additional沒提示，導致沒人想寫這區的題目;w;<br />
+所以我就想說來打個這區的題解，看能不能幫助這一區提升人氣(?<br />
+(雖然我不覺得會有人看我的blog就4了QQ)<br />
+不過因為我很爛，很多題都還沒寫出來，所以這裡只會打我有寫出的題的題解<br />
+因為題目很多，更新進度可能會有點慢<br />
+另外這也是我第一次打大型題解，若哪裡有問題可以直接跟我說~</p>
+
+        <h2 id="目前進度"   >
+          <a href="#目前進度" class="heading-link"><i class="fas fa-link"></i></a>目前進度</h2>
+      
+<p>13 / 50 / 77<br />
+(題解數量 / 解題數 / 總題數)</p>
+<a id="more"></a>
+
+        <h2 id="其他區題解"   >
+          <a href="#其他區題解" class="heading-link"><i class="fas fa-link"></i></a>其他區題解</h2>
+      
+<p><a target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/83295"><strong>Sorting and Seraching</strong></a><br />
+<a target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/70018"><strong>DP</strong></a><br />
+<a target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/77128"><strong>Range Queries</strong></a><br />
+<a target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/82103"><strong>Math</strong></a></p>
+
+        <h2 id="開始吧~"   >
+          <a href="#開始吧~" class="heading-link"><i class="fas fa-link"></i></a>開始吧~</h2>
+      
+
+        <h3 id="1087-shortest-subsequence"   >
+          <a href="#1087-shortest-subsequence" class="heading-link"><i class="fas fa-link"></i></a>1087 - Shortest Subsequence</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1087"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>一個直觀的greedy法就是從左掃到右，沿途計算目前四種字元的數量<br />
+若四種字元的出現過了，代表答案長度一定需要+1，否則就會出現subsequence<br />
+所以就把當前跑到的字元加到答案裡，並將數量歸零<br />
+跑完後要記得加上一個沒出現過的字元</p>
+</details>
+
+        <h3 id="1146-counting-bits"   >
+          <a href="#1146-counting-bits" class="heading-link"><i class="fas fa-link"></i></a>1146 - Counting Bits</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1146"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>先分別計算第0個bit、第1個bit、…的答案，再加起來就好<br />
+觀察一下可以發現第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>個bit每<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{i + 1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.824664em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>個數會循環，且每個循環節前<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">2^i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.824664em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span></span></span></span></span></span></span>個數會是0，其他會是1<br />
+所以對每個bit直接算出循環的數量，再加一加就能得出答案了</p>
+</details>
+
+        <h3 id="1670-swap-game"   >
+          <a href="#1670-swap-game" class="heading-link"><i class="fas fa-link"></i></a>1670 - Swap Game</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1670"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>遊戲最多只有9!種狀態，所以就蓋一張9!個點的新圖，將每種能互相到達的狀態用一條邊連接<br />
+然後跑一遍bfs即可</p>
+</details>
+
+        <h3 id="1134-prüfer-code"   >
+          <a href="#1134-prüfer-code" class="heading-link"><i class="fas fa-link"></i></a>1134 - Prüfer Code</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1134"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>首先，沒被列在當前Prüfer Code裡的點一定是葉子<br />
+所以做法其實很單純，跑過一次陣列，每次挑出一個index最小的葉子跟陣列的點連邊<br />
+若該點已經不在Prüfer Code裡了就把他丟到葉子的set裡</p>
+</details>
+
+        <h3 id="1756-acyclic-graph-edges"   >
+          <a href="#1756-acyclic-graph-edges" class="heading-link"><i class="fas fa-link"></i></a>1756 - Acyclic Graph Edges</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1756"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>梗題<br />
+把編號小的指到邊號大的，出來的圖就一定無環</p>
+</details>
+
+        <h3 id="2177-strongly-connected-edges"   >
+          <a href="#2177-strongly-connected-edges" class="heading-link"><i class="fas fa-link"></i></a>2177 - Strongly Connected Edges</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2177"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>先上結論</p>
+<ol>
+<li>圖不連通或是圖上有橋，則無解</li>
+<li>否則蓋一棵dfs樹，把樹邊的方向定為parent to child，回邊訂為child to parent，這樣一定是對的</li>
+</ol>
+<p>說明<br />
+圖上沒有橋 -&gt; dfs樹每一條樹邊一定會被一條回邊蓋到 -&gt; 必定可以從一個點走到根<br />
+走到根之後就能直接經由樹邊走到所有點了</p>
+</details>
+
+        <h3 id="2179-even-outdegree-edges"   >
+          <a href="#2179-even-outdegree-edges" class="heading-link"><i class="fas fa-link"></i></a>2179 - Even Outdegree Edges</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2179"><strong>連結</strong></a></p>
+<details>
+<summary>題解 Part1</summary>
+<p>先來考慮樹的case吧，dfs(v)會回傳將<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>的所有子樹的點(不包含<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>)變偶出度，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>的出度是奇數還是偶數<br />
+這樣一來，對於一個點<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>，它的兒子<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span>會有兩種case</p>
+<ol>
+<li>dfs(u) == 1，就將邊從<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span>指向<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span></li>
+<li>dfs(u) == 0，就將邊從<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>指向<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span><br />
+最後只要檢查dfs(root)回傳的是不是0即可</li>
+</ol>
+</details>
+<details>
+<summary>題解 Part2</summary>
+<p>再來一般圖的case，會發現前面的方法還是可行的，只要將回邊的方向全部定為parent to child即可<br />
+這樣就不會動到該點子樹的奇偶性</p>
+</details>
+
+        <h3 id="2422-multiplication-table"   >
+          <a href="#2422-multiplication-table" class="heading-link"><i class="fas fa-link"></i></a>2422 - Multiplication Table</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2422"><strong>連結</strong></a></p>
+<details>
+<summary>Hint</summary>
+<p>二分搜</p>
+</details>
+<details>
+<summary>題解</summary>
+<p>對答案二分搜，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≤</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">\leq m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>的數量為：<br />
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>≤</mo><mi>n</mi></mrow></msubsup><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo separator="true">,</mo><mi>m</mi><mi mathvariant="normal">/</mi><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i = 1}^{i \leq n}{min(n, m / i)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.264274em;vertical-align:-0.29971000000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.964564em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">≤</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">m</span><span class="mord">/</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span></span><br />
+直接算就好</p>
+</details>
+
+        <h3 id="1142-advertisement"   >
+          <a href="#1142-advertisement" class="heading-link"><i class="fas fa-link"></i></a>1142 - Advertisement</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1142"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>經典題<br />
+先計算出l[i]代表從最大的index<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span></span></span></span> s.t. h[j] &lt; h[i]<br />
+在算出r[i]代表最小的index<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span></span></span></span> s.t. h[i] &gt; h[j]<br />
+這個可以用stack做單調對列做完，做法如下：<br />
+首先我們觀察到若<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi><mo>&lt;</mo><mi>i</mi><mo separator="true">,</mo><mi>h</mi><mo stretchy="false">[</mo><mi>j</mi><mo stretchy="false">]</mo><mo>≥</mo><mi>h</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">j &lt; i, h[j] \geq h[i]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">h</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span>，則<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span></span></span></span>一定不會是之後的答案(因為<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span></span></span></span>會先被<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>擋掉)<br />
+所以我們可以開一個stack存下還有可能作為答案的index<br />
+每當加入一個數，就看它可以讓哪些位置不再作為答案，把它一個一個pop掉<br />
+結束之後就直接取stack的top，它就會是我們要的l[i]了</p>
+<p>算完之後再算<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo>∗</mo><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo>−</mo><mi>l</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">h[i] * (r[i] - l[i] + 1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>的最大值就會是答案惹</p>
+</details>
+
+        <h3 id="2186-special-substrings"   >
+          <a href="#2186-special-substrings" class="heading-link"><i class="fas fa-link"></i></a>2186 - Special Substrings</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2186"><strong>連結</strong></a></p>
+<details>
+<summary>Hint</summary>
+<p>Hash</p>
+</details>
+<details>
+<summary>題解</summary>
+<p>先幫每個出現的字母定義一個hash值吧<br />
+須滿足每個字母的hash值總和為0</p>
+<p>這樣一來問題就轉換成有幾個區間和為0<br />
+老梗，前綴和 + map直接做完</p>
+<p>非hash作法沒多想，不過我翻每個人的code也幾乎都是hash就是了=w=</p>
+</details>
+
+        <h3 id="2229-permutation-inversions"   >
+          <a href="#2229-permutation-inversions" class="heading-link"><i class="fas fa-link"></i></a>2229 - Permutation Inversions</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2229"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>dp[n][k]代表長度為<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>、有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>個inversion的permutation數量<br />
+則轉移式可考慮窮舉<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>的位置：<br />
+dp[n][k] = \sum_{0 \leq i \leq n - 1}{dp[n - 1][k - i]}<br />
+其中<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>為增加的inversion數量</p>
+<p>一段區間和，可用前綴和加速，複雜度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{O}(nk)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span></p>
+</details>
+
+        <h3 id="1655-maximum-xor-subarray"   >
+          <a href="#1655-maximum-xor-subarray" class="heading-link"><i class="fas fa-link"></i></a>1655 - Maximum Xor Subarray</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1655"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>首先先套前綴和，答案等於<span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \pre at position 15: pre[r] \oplus \̲p̲r̲e̲[l]'>pre[r] \oplus \pre[l]</span>的最大值</p>
+<p>首先先把所有前綴值建一棵0-1trie<br />
+接下來要query一個數跟trie上所有數的最大xor值<br />
+由於二進位的性質，最高位可以先放1就放1是最好的<br />
+所以可以在那棵trie上走，遇到0可以往1就往1走，反之亦然<br />
+之後取全部最大值即可</p>
+</details>
+
+        <h3 id="1664-movie-festival-queries"   >
+          <a href="#1664-movie-festival-queries" class="heading-link"><i class="fas fa-link"></i></a>1664 - Movie Festival Queries</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1664"><strong>連結</strong></a></p>
+<details>
+<summary>Hint</summary>
+<p>倍增</p>
+</details>
+<details>
+<summary>題解</summary>
+<p>超級喜歡這題&gt; &lt; 不過有點難想</p>
+<p>來考慮一下倍增吧<br />
+dp[i][j]代表從時間<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>開始，看<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>j</mi></msup></mrow><annotation encoding="application/x-tex">2^j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.824664em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05724em;">j</span></span></span></span></span></span></span></span></span></span></span>個movie的最短所需時間<br />
+倍增的轉移：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>p</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo stretchy="false">[</mo><mi>j</mi><mo stretchy="false">]</mo><mo>=</mo><mi>d</mi><mi>p</mi><mo stretchy="false">[</mo><mi>d</mi><mi>p</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo stretchy="false">[</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">]</mo><mo stretchy="false">]</mo><mo stretchy="false">[</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">dp[i][j] = dp[dp[i][j - 1]][j - 1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">p</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">p</span><span class="mopen">[</span><span class="mord mathdefault">d</span><span class="mord mathdefault">p</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span></p>
+<p>之後每次query就從最大的bit開始看，看跳完會不會超過限制<br />
+如果不會超過就更新答案，繼續往後跳</p>
+</details>
+</div><footer class="post-footer"><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">Author: </span><span class="copyright-author__value"><a href="https://abc864197532.github.io">abc864197532</a></span></div><div class="copyright-link"><span class="copyright-link__name">Link: </span><span class="copyright-link__value"><a href="https://abc864197532.github.io/2021/04/05/cses-additional-sol/">https://abc864197532.github.io/2021/04/05/cses-additional-sol/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">Copyright: </span><span class="copyright-notice__value">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> unless stating additionally</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://abc864197532.github.io/tags/CSES/">CSES</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2021/03/27/toi-2021-1/"><span class="paginator-prev__text">TOI 2021 1!</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%89%8D%E9%80%B2%E5%BA%A6"><span class="toc-number">1.</span> <span class="toc-text">
+          目前進度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%8D%80%E9%A1%8C%E8%A7%A3"><span class="toc-number">2.</span> <span class="toc-text">
+          其他區題解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%96%8B%E5%A7%8B%E5%90%A7~"><span class="toc-number">3.</span> <span class="toc-text">
+          開始吧~</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1087-shortest-subsequence"><span class="toc-number">3.1.</span> <span class="toc-text">
+          1087 - Shortest Subsequence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1146-counting-bits"><span class="toc-number">3.2.</span> <span class="toc-text">
+          1146 - Counting Bits</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1670-swap-game"><span class="toc-number">3.3.</span> <span class="toc-text">
+          1670 - Swap Game</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1134-pr%C3%BCfer-code"><span class="toc-number">3.4.</span> <span class="toc-text">
+          1134 - Prüfer Code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1756-acyclic-graph-edges"><span class="toc-number">3.5.</span> <span class="toc-text">
+          1756 - Acyclic Graph Edges</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2177-strongly-connected-edges"><span class="toc-number">3.6.</span> <span class="toc-text">
+          2177 - Strongly Connected Edges</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2179-even-outdegree-edges"><span class="toc-number">3.7.</span> <span class="toc-text">
+          2179 - Even Outdegree Edges</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2422-multiplication-table"><span class="toc-number">3.8.</span> <span class="toc-text">
+          2422 - Multiplication Table</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1142-advertisement"><span class="toc-number">3.9.</span> <span class="toc-text">
+          1142 - Advertisement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2186-special-substrings"><span class="toc-number">3.10.</span> <span class="toc-text">
+          2186 - Special Substrings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2229-permutation-inversions"><span class="toc-number">3.11.</span> <span class="toc-text">
+          2229 - Permutation Inversions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1655-maximum-xor-subarray"><span class="toc-number">3.12.</span> <span class="toc-text">
+          1655 - Maximum Xor Subarray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1664-movie-festival-queries"><span class="toc-number">3.13.</span> <span class="toc-text">
+          1664 - Movie Festival Queries</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/fish.png" alt="avatar"></div><p class="sidebar-ov-author__text">abc864197532</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/abc864197532" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://codeforces.com/profile/abc864197532" target="_blank" rel="noopener" data-popover="Codeforces" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CF</span></a><a class="sidebar-ov-social-item" href="https://atcoder.jp/users/abc864197532" target="_blank" rel="noopener" data-popover="Atcoder" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">AtC</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">14</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">12</div><div class="sidebar-ov-state-item__name">Tags</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>abc864197532</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="0,0,255" opacity="0.6" count="99" zIndex="-1"></script><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" rel="stylesheet" type="text/css"><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.css" rel="stylesheet" type="text/css"><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.min.js"></script><script src="/js/utils.js?v=2.6.1"></script><script src="/js/stun-boot.js?v=2.6.1"></script><script src="/js/scroll.js?v=2.6.1"></script><script src="/js/header.js?v=2.6.1"></script><script src="/js/sidebar.js?v=2.6.1"></script></body></html>
