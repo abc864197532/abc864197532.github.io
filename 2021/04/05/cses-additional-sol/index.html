@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icon16.png?v=2.6.1" type="image/png" sizes="16x16"><link rel="icon" href="/images/icon32.png?v=2.6.1" type="image/png" sizes="32x32"><meta name="description" content="嗨(?) 因為我還蠻喜歡cses這個judge的題目 尤其是additional problems裡的題目，每題都很酷也讓我學到不少:D 不過好像因為其他區比較熱門 + additional沒提示，導致沒人想寫這區的題目;w; 所以我就想說來打個這區的題解，看能不能幫助這一區提升人氣(? (雖然我不覺得會有人看我的blog就4了QQ) 不過因為我很爛，很多題都還沒寫出來，所以這裡只會打我有寫出的題">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icon16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icon32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="嗨(?) 因為我還蠻喜歡cses這個judge的題目 尤其是additional problems裡的題目，每題都很酷也讓我學到不少:D 不過好像因為其他區比較熱門 + additional沒提示，導致沒人想寫這區的題目;w; 所以我就想說來打個這區的題解，看能不能幫助這一區提升人氣(? (雖然我不覺得會有人看我的blog就4了QQ) 不過因為我很爛，很多題都還沒寫出來，所以這裡只會打我有寫出的題">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSES additional problems solution (殘缺 + 施工中)">
 <meta property="og:url" content="https://abc864197532.github.io/2021/04/05/cses-additional-sol/index.html">
@@ -11,7 +11,7 @@
 <meta property="article:author" content="abc864197532">
 <meta property="article:tag" content="CSES">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.imgur.com/9avKx1A.png"><title>CSES additional problems solution (殘缺 + 施工中) | abc's Blog</title><link ref="canonical" href="https://abc864197532.github.io/2021/04/05/cses-additional-sol/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.1"><script>var Stun = window.Stun || {};
+<meta name="twitter:image" content="https://i.imgur.com/9avKx1A.png"><title>CSES additional problems solution (殘缺 + 施工中) | abc's Blog</title><link ref="canonical" href="https://abc864197532.github.io/2021/04/05/cses-additional-sol/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
 var CONFIG = {
   root: '/',
   algolia: undefined,
@@ -46,14 +46,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 另外這也是我第一次打大型題解，若哪裡有問題可以直接跟我說~</p>
 
         <h2 id="目前進度"   >
-          <a href="#目前進度" class="heading-link"><i class="fas fa-link"></i></a>目前進度</h2>
+          <a href="#目前進度" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#目前進度"></a> 目前進度</h2>
       
 <p>30 / 56 / 77<br />
 (題解數量 / 解題數 / 總題數)</p>
 <a id="more"></a>
 
         <h2 id="其他區題解"   >
-          <a href="#其他區題解" class="heading-link"><i class="fas fa-link"></i></a>其他區題解</h2>
+          <a href="#其他區題解" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#其他區題解"></a> 其他區題解</h2>
       
 <p><a target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/83295"><strong>Sorting and Seraching</strong></a><br />
 <a target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/70018"><strong>DP</strong></a><br />
@@ -61,11 +61,11 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 <a target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/82103"><strong>Math</strong></a></p>
 
         <h2 id="開始吧~"   >
-          <a href="#開始吧~" class="heading-link"><i class="fas fa-link"></i></a>開始吧~</h2>
+          <a href="#開始吧~" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#開始吧~"></a> 開始吧~</h2>
       
 
         <h3 id="1087-shortest-subsequence"   >
-          <a href="#1087-shortest-subsequence" class="heading-link"><i class="fas fa-link"></i></a>1087 - Shortest Subsequence</h3>
+          <a href="#1087-shortest-subsequence" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1087-shortest-subsequence"></a> 1087 - Shortest Subsequence</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1087"><strong>連結</strong></a></p>
 <details>
@@ -77,7 +77,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="1146-counting-bits"   >
-          <a href="#1146-counting-bits" class="heading-link"><i class="fas fa-link"></i></a>1146 - Counting Bits</h3>
+          <a href="#1146-counting-bits" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1146-counting-bits"></a> 1146 - Counting Bits</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1146"><strong>連結</strong></a></p>
 <details>
@@ -88,7 +88,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="1670-swap-game"   >
-          <a href="#1670-swap-game" class="heading-link"><i class="fas fa-link"></i></a>1670 - Swap Game</h3>
+          <a href="#1670-swap-game" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1670-swap-game"></a> 1670 - Swap Game</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1670"><strong>連結</strong></a></p>
 <details>
@@ -98,7 +98,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="1134-prüfer-code"   >
-          <a href="#1134-prüfer-code" class="heading-link"><i class="fas fa-link"></i></a>1134 - Prüfer Code</h3>
+          <a href="#1134-prüfer-code" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1134-prüfer-code"></a> 1134 - Prüfer Code</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1134"><strong>連結</strong></a></p>
 <details>
@@ -109,7 +109,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="1756-acyclic-graph-edges"   >
-          <a href="#1756-acyclic-graph-edges" class="heading-link"><i class="fas fa-link"></i></a>1756 - Acyclic Graph Edges</h3>
+          <a href="#1756-acyclic-graph-edges" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1756-acyclic-graph-edges"></a> 1756 - Acyclic Graph Edges</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1756"><strong>連結</strong></a></p>
 <details>
@@ -119,14 +119,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="2177-strongly-connected-edges"   >
-          <a href="#2177-strongly-connected-edges" class="heading-link"><i class="fas fa-link"></i></a>2177 - Strongly Connected Edges</h3>
+          <a href="#2177-strongly-connected-edges" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2177-strongly-connected-edges"></a> 2177 - Strongly Connected Edges</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2177"><strong>連結</strong></a></p>
 <details>
 <summary>題解</summary>
 
         <h4 id="結論"   >
-          <a href="#結論" class="heading-link"><i class="fas fa-link"></i></a>結論</h4>
+          <a href="#結論" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#結論"></a> 結論</h4>
       
 <ol>
 <li>圖不連通或是圖上有橋，則無解</li>
@@ -134,14 +134,14 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </ol>
 
         <h4 id="說明"   >
-          <a href="#說明" class="heading-link"><i class="fas fa-link"></i></a>說明</h4>
+          <a href="#說明" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#說明"></a> 說明</h4>
       
 <p>圖上沒有橋 -&gt; dfs樹每一條樹邊一定會被一條回邊蓋到 -&gt; 必定可以從一個點走到根<br />
 走到根之後就能直接經由樹邊走到所有點了</p>
 </details>
 
         <h3 id="2179-even-outdegree-edges"   >
-          <a href="#2179-even-outdegree-edges" class="heading-link"><i class="fas fa-link"></i></a>2179 - Even Outdegree Edges</h3>
+          <a href="#2179-even-outdegree-edges" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2179-even-outdegree-edges"></a> 2179 - Even Outdegree Edges</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2179"><strong>連結</strong></a></p>
 <details>
@@ -158,7 +158,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="2422-multiplication-table"   >
-          <a href="#2422-multiplication-table" class="heading-link"><i class="fas fa-link"></i></a>2422 - Multiplication Table</h3>
+          <a href="#2422-multiplication-table" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2422-multiplication-table"></a> 2422 - Multiplication Table</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2422"><strong>連結</strong></a></p>
 <details>
@@ -173,7 +173,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="1142-advertisement"   >
-          <a href="#1142-advertisement" class="heading-link"><i class="fas fa-link"></i></a>1142 - Advertisement</h3>
+          <a href="#1142-advertisement" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1142-advertisement"></a> 1142 - Advertisement</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1142"><strong>連結</strong></a></p>
 <details>
@@ -190,7 +190,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="2186-special-substrings"   >
-          <a href="#2186-special-substrings" class="heading-link"><i class="fas fa-link"></i></a>2186 - Special Substrings</h3>
+          <a href="#2186-special-substrings" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2186-special-substrings"></a> 2186 - Special Substrings</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2186"><strong>連結</strong></a></p>
 <details>
@@ -207,7 +207,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="2229-permutation-inversions"   >
-          <a href="#2229-permutation-inversions" class="heading-link"><i class="fas fa-link"></i></a>2229 - Permutation Inversions</h3>
+          <a href="#2229-permutation-inversions" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2229-permutation-inversions"></a> 2229 - Permutation Inversions</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2229"><strong>連結</strong></a></p>
 <details>
@@ -220,7 +220,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="1655-maximum-xor-subarray"   >
-          <a href="#1655-maximum-xor-subarray" class="heading-link"><i class="fas fa-link"></i></a>1655 - Maximum Xor Subarray</h3>
+          <a href="#1655-maximum-xor-subarray" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1655-maximum-xor-subarray"></a> 1655 - Maximum Xor Subarray</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1655"><strong>連結</strong></a></p>
 <details>
@@ -234,7 +234,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 </details>
 
         <h3 id="1664-movie-festival-queries"   >
-          <a href="#1664-movie-festival-queries" class="heading-link"><i class="fas fa-link"></i></a>1664 - Movie Festival Queries</h3>
+          <a href="#1664-movie-festival-queries" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1664-movie-festival-queries"></a> 1664 - Movie Festival Queries</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1664"><strong>連結</strong></a></p>
 <details>
@@ -252,7 +252,7 @@ dp[i][j]代表從時間<span class="katex"><span class="katex-mathml"><math><sem
 </details>
 
         <h3 id="1697-chess-tournament"   >
-          <a href="#1697-chess-tournament" class="heading-link"><i class="fas fa-link"></i></a>1697 - Chess Tournament</h3>
+          <a href="#1697-chess-tournament" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1697-chess-tournament"></a> 1697 - Chess Tournament</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1697"><strong>連結</strong></a></p>
 <details>
@@ -264,7 +264,7 @@ dp[i][j]代表從時間<span class="katex"><span class="katex-mathml"><math><sem
 </details>
 
         <h3 id="1702-tree-traversals"   >
-          <a href="#1702-tree-traversals" class="heading-link"><i class="fas fa-link"></i></a>1702 - Tree Traversals</h3>
+          <a href="#1702-tree-traversals" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1702-tree-traversals"></a> 1702 - Tree Traversals</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1702"><strong>連結</strong></a></p>
 <details>
@@ -281,21 +281,21 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1704-network-renovation"   >
-          <a href="#1704-network-renovation" class="heading-link"><i class="fas fa-link"></i></a>1704 - Network Renovation</h3>
+          <a href="#1704-network-renovation" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1704-network-renovation"></a> 1704 - Network Renovation</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1704"><strong>連結</strong></a></p>
 <details>
 <summary>題解</summary>
 
         <h4 id="結論-2"   >
-          <a href="#結論-2" class="heading-link"><i class="fas fa-link"></i></a>結論</h4>
+          <a href="#結論-2" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#結論-2"></a> 結論</h4>
       
 <p>令葉子數量為<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>，則答案為<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">⌈</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mo stretchy="false">⌉</mo></mrow><annotation encoding="application/x-tex">\lceil \frac{m}{2} \rceil</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.095em;vertical-align:-0.345em;"></span><span class="mopen">⌈</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">⌉</span></span></span></span><br />
 連邊的方法為將葉子按照<strong>以不為葉子的點為根</strong>做dfs的時間戳記排序好，將第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>個葉子連到第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">⌊</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mo stretchy="false">⌋</mo><mo>+</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">\lfloor \frac{m}{2} \rfloor + i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.095em;vertical-align:-0.345em;"></span><span class="mopen">⌊</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">⌋</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>個葉子<br />
 若<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>為奇數，再將第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>個葉子連到第<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>個葉子即可</p>
 
         <h4 id="證明"   >
-          <a href="#證明" class="heading-link"><i class="fas fa-link"></i></a>證明</h4>
+          <a href="#證明" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#證明"></a> 證明</h4>
       
 <p>首先，由於每一條邊最多只會讓兩個葉子滿足條件，所以答案會有下界為<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">⌈</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mo stretchy="false">⌉</mo></mrow><annotation encoding="application/x-tex">\lceil \frac{m}{2} \rceil</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.095em;vertical-align:-0.345em;"></span><span class="mopen">⌈</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">⌉</span></span></span></span><br />
 接下來就只要證明這樣的連邊方法是好的</p>
@@ -317,7 +317,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1707-graph-girth"   >
-          <a href="#1707-graph-girth" class="heading-link"><i class="fas fa-link"></i></a>1707 - Graph Girth</h3>
+          <a href="#1707-graph-girth" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1707-graph-girth"></a> 1707 - Graph Girth</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1707"><strong>連結</strong></a></p>
 <details>
@@ -328,7 +328,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="2214-inverse-inversions"   >
-          <a href="#2214-inverse-inversions" class="heading-link"><i class="fas fa-link"></i></a>2214 - Inverse Inversions</h3>
+          <a href="#2214-inverse-inversions" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2214-inverse-inversions"></a> 2214 - Inverse Inversions</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2214"><strong>連結</strong></a></p>
 <details>
@@ -340,7 +340,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1743-string-reorder"   >
-          <a href="#1743-string-reorder" class="heading-link"><i class="fas fa-link"></i></a>1743 - String Reorder</h3>
+          <a href="#1743-string-reorder" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1743-string-reorder"></a> 1743 - String Reorder</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1743"><strong>連結</strong></a></p>
 <details>
@@ -352,7 +352,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="2425-stack-weights"   >
-          <a href="#2425-stack-weights" class="heading-link"><i class="fas fa-link"></i></a>2425 - Stack Weights</h3>
+          <a href="#2425-stack-weights" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2425-stack-weights"></a> 2425 - Stack Weights</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2425"><strong>連結</strong></a></p>
 <details>
@@ -374,7 +374,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1747-pyramid-array"   >
-          <a href="#1747-pyramid-array" class="heading-link"><i class="fas fa-link"></i></a>1747 - Pyramid Array</h3>
+          <a href="#1747-pyramid-array" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1747-pyramid-array"></a> 1747 - Pyramid Array</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1747"><strong>連結</strong></a></p>
 <details>
@@ -392,7 +392,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1748-increasing-subsequence-ii"   >
-          <a href="#1748-increasing-subsequence-ii" class="heading-link"><i class="fas fa-link"></i></a>1748 - Increasing Subsequence II</h3>
+          <a href="#1748-increasing-subsequence-ii" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1748-increasing-subsequence-ii"></a> 1748 - Increasing Subsequence II</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1748"><strong>連結</strong></a></p>
 <details>
@@ -403,7 +403,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1188-bit-inversions"   >
-          <a href="#1188-bit-inversions" class="heading-link"><i class="fas fa-link"></i></a>1188 - Bit Inversions</h3>
+          <a href="#1188-bit-inversions" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1188-bit-inversions"></a> 1188 - Bit Inversions</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1188"><strong>連結</strong></a></p>
 <details>
@@ -415,7 +415,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1162-sorting-methods"   >
-          <a href="#1162-sorting-methods" class="heading-link"><i class="fas fa-link"></i></a>1162 - Sorting Methods</h3>
+          <a href="#1162-sorting-methods" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1162-sorting-methods"></a> 1162 - Sorting Methods</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1162"><strong>連結</strong></a></p>
 <details>
@@ -430,7 +430,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="2414-list-of-sums"   >
-          <a href="#2414-list-of-sums" class="heading-link"><i class="fas fa-link"></i></a>2414 - List of Sums</h3>
+          <a href="#2414-list-of-sums" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2414-list-of-sums"></a> 2414 - List of Sums</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2414"><strong>連結</strong></a></p>
 <details>
@@ -446,7 +446,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1654-bit-problem"   >
-          <a href="#1654-bit-problem" class="heading-link"><i class="fas fa-link"></i></a>1654 - Bit Problem</h3>
+          <a href="#1654-bit-problem" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1654-bit-problem"></a> 1654 - Bit Problem</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1654"><strong>連結</strong></a></p>
 <details>
@@ -456,7 +456,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1700-tree-isomorphism-i"   >
-          <a href="#1700-tree-isomorphism-i" class="heading-link"><i class="fas fa-link"></i></a>1700 - Tree Isomorphism I</h3>
+          <a href="#1700-tree-isomorphism-i" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1700-tree-isomorphism-i"></a> 1700 - Tree Isomorphism I</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1700"><strong>連結</strong></a></p>
 <details>
@@ -471,7 +471,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1701-tree-isomorphism-ii"   >
-          <a href="#1701-tree-isomorphism-ii" class="heading-link"><i class="fas fa-link"></i></a>1701 - Tree Isomorphism II</h3>
+          <a href="#1701-tree-isomorphism-ii" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1701-tree-isomorphism-ii"></a> 1701 - Tree Isomorphism II</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1701"><strong>連結</strong></a></p>
 <details>
@@ -483,7 +483,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="2228-counting-sequences"   >
-          <a href="#2228-counting-sequences" class="heading-link"><i class="fas fa-link"></i></a>2228 - Counting Sequences</h3>
+          <a href="#2228-counting-sequences" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2228-counting-sequences"></a> 2228 - Counting Sequences</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2228"><strong>連結</strong></a></p>
 <details>
@@ -500,7 +500,7 @@ inorder:  (左子樹)(根)(右子樹)</p>
 </details>
 
         <h3 id="1706-school-excursion"   >
-          <a href="#1706-school-excursion" class="heading-link"><i class="fas fa-link"></i></a>1706 - School Excursion</h3>
+          <a href="#1706-school-excursion" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#1706-school-excursion"></a> 1706 - School Excursion</h3>
       
 <p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1706"><strong>連結</strong></a></p>
 <details>
@@ -531,40 +531,40 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">bool</span>&gt; dp(n, <span class="literal">false</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> w : W) &#123; <span class="comment">// W store all possible weight</span></span><br><span class="line">    <span class="keyword">int</span> num = cnt[w]; <span class="comment">// number of weight w item</span></span><br><span class="line">    <span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; t(n, <span class="number">0</span>); <span class="comment">// number of use</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i + w &lt; n; ++i) <span class="keyword">if</span> (dp[i] &amp;&amp; t[i] + <span class="number">1</span> &lt;= num) &#123;</span><br><span class="line">        dp[i + w] = <span class="literal">true</span>;</span><br><span class="line">        t[i + w] = t[i] + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
 </details>
 </div><footer class="post-footer"><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">Author: </span><span class="copyright-author__value"><a href="https://abc864197532.github.io">abc864197532</a></span></div><div class="copyright-link"><span class="copyright-link__name">Link: </span><span class="copyright-link__value"><a href="https://abc864197532.github.io/2021/04/05/cses-additional-sol/">https://abc864197532.github.io/2021/04/05/cses-additional-sol/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">Copyright: </span><span class="copyright-notice__value">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> unless stating additionally</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://abc864197532.github.io/tags/CSES/">CSES</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2021/04/10/joisc-2021-road/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">JOISC 2021 - Road Construction</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2021/03/27/toi-2021-1/"><span class="paginator-prev__text">TOI 2021 1!</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%89%8D%E9%80%B2%E5%BA%A6"><span class="toc-number">1.</span> <span class="toc-text">
-          目前進度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%8D%80%E9%A1%8C%E8%A7%A3"><span class="toc-number">2.</span> <span class="toc-text">
-          其他區題解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%96%8B%E5%A7%8B%E5%90%A7~"><span class="toc-number">3.</span> <span class="toc-text">
-          開始吧~</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1087-shortest-subsequence"><span class="toc-number">3.1.</span> <span class="toc-text">
-          1087 - Shortest Subsequence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1146-counting-bits"><span class="toc-number">3.2.</span> <span class="toc-text">
-          1146 - Counting Bits</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1670-swap-game"><span class="toc-number">3.3.</span> <span class="toc-text">
-          1670 - Swap Game</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1134-pr%C3%BCfer-code"><span class="toc-number">3.4.</span> <span class="toc-text">
-          1134 - Prüfer Code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1756-acyclic-graph-edges"><span class="toc-number">3.5.</span> <span class="toc-text">
-          1756 - Acyclic Graph Edges</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2177-strongly-connected-edges"><span class="toc-number">3.6.</span> <span class="toc-text">
-          2177 - Strongly Connected Edges</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B5%90%E8%AB%96"><span class="toc-number">3.6.1.</span> <span class="toc-text">
-          結論</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AA%AA%E6%98%8E"><span class="toc-number">3.6.2.</span> <span class="toc-text">
-          說明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2179-even-outdegree-edges"><span class="toc-number">3.7.</span> <span class="toc-text">
-          2179 - Even Outdegree Edges</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2422-multiplication-table"><span class="toc-number">3.8.</span> <span class="toc-text">
-          2422 - Multiplication Table</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1142-advertisement"><span class="toc-number">3.9.</span> <span class="toc-text">
-          1142 - Advertisement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2186-special-substrings"><span class="toc-number">3.10.</span> <span class="toc-text">
-          2186 - Special Substrings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2229-permutation-inversions"><span class="toc-number">3.11.</span> <span class="toc-text">
-          2229 - Permutation Inversions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1655-maximum-xor-subarray"><span class="toc-number">3.12.</span> <span class="toc-text">
-          1655 - Maximum Xor Subarray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1664-movie-festival-queries"><span class="toc-number">3.13.</span> <span class="toc-text">
-          1664 - Movie Festival Queries</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1697-chess-tournament"><span class="toc-number">3.14.</span> <span class="toc-text">
-          1697 - Chess Tournament</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1702-tree-traversals"><span class="toc-number">3.15.</span> <span class="toc-text">
-          1702 - Tree Traversals</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1704-network-renovation"><span class="toc-number">3.16.</span> <span class="toc-text">
-          1704 - Network Renovation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B5%90%E8%AB%96-2"><span class="toc-number">3.16.1.</span> <span class="toc-text">
-          結論</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AD%89%E6%98%8E"><span class="toc-number">3.16.2.</span> <span class="toc-text">
-          證明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1707-graph-girth"><span class="toc-number">3.17.</span> <span class="toc-text">
-          1707 - Graph Girth</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2214-inverse-inversions"><span class="toc-number">3.18.</span> <span class="toc-text">
-          2214 - Inverse Inversions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1743-string-reorder"><span class="toc-number">3.19.</span> <span class="toc-text">
-          1743 - String Reorder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2425-stack-weights"><span class="toc-number">3.20.</span> <span class="toc-text">
-          2425 - Stack Weights</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1747-pyramid-array"><span class="toc-number">3.21.</span> <span class="toc-text">
-          1747 - Pyramid Array</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1748-increasing-subsequence-ii"><span class="toc-number">3.22.</span> <span class="toc-text">
-          1748 - Increasing Subsequence II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1188-bit-inversions"><span class="toc-number">3.23.</span> <span class="toc-text">
-          1188 - Bit Inversions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1162-sorting-methods"><span class="toc-number">3.24.</span> <span class="toc-text">
-          1162 - Sorting Methods</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2414-list-of-sums"><span class="toc-number">3.25.</span> <span class="toc-text">
-          2414 - List of Sums</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1654-bit-problem"><span class="toc-number">3.26.</span> <span class="toc-text">
-          1654 - Bit Problem</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1700-tree-isomorphism-i"><span class="toc-number">3.27.</span> <span class="toc-text">
-          1700 - Tree Isomorphism I</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1701-tree-isomorphism-ii"><span class="toc-number">3.28.</span> <span class="toc-text">
-          1701 - Tree Isomorphism II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2228-counting-sequences"><span class="toc-number">3.29.</span> <span class="toc-text">
-          2228 - Counting Sequences</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1706-school-excursion"><span class="toc-number">3.30.</span> <span class="toc-text">
-          1706 - School Excursion</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/fish.png" alt="avatar"></div><p class="sidebar-ov-author__text">abc864197532</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/abc864197532" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://codeforces.com/profile/abc864197532" target="_blank" rel="noopener" data-popover="Codeforces" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CF</span></a><a class="sidebar-ov-social-item" href="https://atcoder.jp/users/abc864197532" target="_blank" rel="noopener" data-popover="Atcoder" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">AtC</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">15</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">13</div><div class="sidebar-ov-state-item__name">Tags</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>abc864197532</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="0,0,255" opacity="0.6" count="99" zIndex="-1"></script><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" rel="stylesheet" type="text/css"><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.css" rel="stylesheet" type="text/css"><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.min.js"></script><script src="/js/utils.js?v=2.6.1"></script><script src="/js/stun-boot.js?v=2.6.1"></script><script src="/js/scroll.js?v=2.6.1"></script><script src="/js/header.js?v=2.6.1"></script><script src="/js/sidebar.js?v=2.6.1"></script></body></html>
+           目前進度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%8D%80%E9%A1%8C%E8%A7%A3"><span class="toc-number">2.</span> <span class="toc-text">
+           其他區題解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%96%8B%E5%A7%8B%E5%90%A7~"><span class="toc-number">3.</span> <span class="toc-text">
+           開始吧~</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1087-shortest-subsequence"><span class="toc-number">3.1.</span> <span class="toc-text">
+           1087 - Shortest Subsequence</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1146-counting-bits"><span class="toc-number">3.2.</span> <span class="toc-text">
+           1146 - Counting Bits</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1670-swap-game"><span class="toc-number">3.3.</span> <span class="toc-text">
+           1670 - Swap Game</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1134-pr%C3%BCfer-code"><span class="toc-number">3.4.</span> <span class="toc-text">
+           1134 - Prüfer Code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1756-acyclic-graph-edges"><span class="toc-number">3.5.</span> <span class="toc-text">
+           1756 - Acyclic Graph Edges</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2177-strongly-connected-edges"><span class="toc-number">3.6.</span> <span class="toc-text">
+           2177 - Strongly Connected Edges</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B5%90%E8%AB%96"><span class="toc-number">3.6.1.</span> <span class="toc-text">
+           結論</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AA%AA%E6%98%8E"><span class="toc-number">3.6.2.</span> <span class="toc-text">
+           說明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2179-even-outdegree-edges"><span class="toc-number">3.7.</span> <span class="toc-text">
+           2179 - Even Outdegree Edges</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2422-multiplication-table"><span class="toc-number">3.8.</span> <span class="toc-text">
+           2422 - Multiplication Table</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1142-advertisement"><span class="toc-number">3.9.</span> <span class="toc-text">
+           1142 - Advertisement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2186-special-substrings"><span class="toc-number">3.10.</span> <span class="toc-text">
+           2186 - Special Substrings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2229-permutation-inversions"><span class="toc-number">3.11.</span> <span class="toc-text">
+           2229 - Permutation Inversions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1655-maximum-xor-subarray"><span class="toc-number">3.12.</span> <span class="toc-text">
+           1655 - Maximum Xor Subarray</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1664-movie-festival-queries"><span class="toc-number">3.13.</span> <span class="toc-text">
+           1664 - Movie Festival Queries</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1697-chess-tournament"><span class="toc-number">3.14.</span> <span class="toc-text">
+           1697 - Chess Tournament</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1702-tree-traversals"><span class="toc-number">3.15.</span> <span class="toc-text">
+           1702 - Tree Traversals</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1704-network-renovation"><span class="toc-number">3.16.</span> <span class="toc-text">
+           1704 - Network Renovation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B5%90%E8%AB%96-2"><span class="toc-number">3.16.1.</span> <span class="toc-text">
+           結論</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AD%89%E6%98%8E"><span class="toc-number">3.16.2.</span> <span class="toc-text">
+           證明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1707-graph-girth"><span class="toc-number">3.17.</span> <span class="toc-text">
+           1707 - Graph Girth</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2214-inverse-inversions"><span class="toc-number">3.18.</span> <span class="toc-text">
+           2214 - Inverse Inversions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1743-string-reorder"><span class="toc-number">3.19.</span> <span class="toc-text">
+           1743 - String Reorder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2425-stack-weights"><span class="toc-number">3.20.</span> <span class="toc-text">
+           2425 - Stack Weights</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1747-pyramid-array"><span class="toc-number">3.21.</span> <span class="toc-text">
+           1747 - Pyramid Array</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1748-increasing-subsequence-ii"><span class="toc-number">3.22.</span> <span class="toc-text">
+           1748 - Increasing Subsequence II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1188-bit-inversions"><span class="toc-number">3.23.</span> <span class="toc-text">
+           1188 - Bit Inversions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1162-sorting-methods"><span class="toc-number">3.24.</span> <span class="toc-text">
+           1162 - Sorting Methods</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2414-list-of-sums"><span class="toc-number">3.25.</span> <span class="toc-text">
+           2414 - List of Sums</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1654-bit-problem"><span class="toc-number">3.26.</span> <span class="toc-text">
+           1654 - Bit Problem</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1700-tree-isomorphism-i"><span class="toc-number">3.27.</span> <span class="toc-text">
+           1700 - Tree Isomorphism I</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1701-tree-isomorphism-ii"><span class="toc-number">3.28.</span> <span class="toc-text">
+           1701 - Tree Isomorphism II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2228-counting-sequences"><span class="toc-number">3.29.</span> <span class="toc-text">
+           2228 - Counting Sequences</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1706-school-excursion"><span class="toc-number">3.30.</span> <span class="toc-text">
+           1706 - School Excursion</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/fish.png" alt="avatar"></div><p class="sidebar-ov-author__text">abc864197532</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/abc864197532" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://codeforces.com/profile/abc864197532" target="_blank" rel="noopener" data-popover="Codeforces" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CF</span></a><a class="sidebar-ov-social-item" href="https://atcoder.jp/users/abc864197532" target="_blank" rel="noopener" data-popover="Atcoder" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">AtC</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">15</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">13</div><div class="sidebar-ov-state-item__name">Tags</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>abc864197532</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="0,0,255" opacity="0.6" count="99" zIndex="-1"></script><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" rel="stylesheet" type="text/css"><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.css" rel="stylesheet" type="text/css"><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
