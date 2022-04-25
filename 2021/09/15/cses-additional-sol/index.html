@@ -14,7 +14,7 @@
 <meta property="og:image" content="https://i.imgur.com/KD4MYxZ.png">
 <meta property="og:image" content="https://i.imgur.com/2oOs9Vu.png">
 <meta property="article:published_time" content="2021-09-15T02:30:46.000Z">
-<meta property="article:modified_time" content="2022-04-25T14:15:20.623Z">
+<meta property="article:modified_time" content="2022-04-25T14:37:15.542Z">
 <meta property="article:author" content="abc864197532">
 <meta property="article:tag" content="CSES">
 <meta name="twitter:card" content="summary">
@@ -886,6 +886,19 @@ proof: 因為若存在一個人沒有職業，那把第 <span class="katex"><spa
 <p>所以預處理完就順著前面的步驟移動就好，複雜度是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mn>18</mn><mo>∗</mo><mn>1</mn><msup><mn>0</mn><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{O}(18 * 10^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span><span class="mopen">(</span><span class="mord">1</span><span class="mord">8</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
 </details>
 
+        <h3 id="2180-coin-arrangement"   >
+          <a href="#2180-coin-arrangement" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2180-coin-arrangement"></a> 2180 - Coin Arrangement</h3>
+      
+<p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/2180"><strong>連結</strong></a></p>
+<details>
+<summary>題解</summary>
+<p>觀察：存在一組最佳解使的對於任意兩相鄰 column，不會同時往左移動又往右移動</p>
+<p>原因是這樣可以把他轉成往上動往下動</p>
+<p>這也導出一個 greedy 策略：首先為了方便先將每一個數字 -1，問題變成要讓所有數字變成 0</p>
+<p>之後從左邊掃到右邊，維護現在上排和下排的數字，如果上下正負號不一樣就移動直到兩個變一樣</p>
+<p>跑完最後即為最佳解</p>
+</details>
+
         <h3 id="2176-counting-bishops"   >
           <a href="#2176-counting-bishops" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#2176-counting-bishops"></a> 2176 - Counting Bishops</h3>
       
@@ -1384,28 +1397,29 @@ state 從 <span class="katex"><span class="katex-mathml"><math><semantics><mrow>
            1742 - Robot Path</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2426-programmers-and-artists"><span class="toc-number">2.48.</span> <span class="toc-text">
            2426 - Programmers and Artists</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1757-course-schedule-ii"><span class="toc-number">2.49.</span> <span class="toc-text">
            1757 - Course Schedule II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2174-removing-digits-ii"><span class="toc-number">2.50.</span> <span class="toc-text">
-           2174 - Removing Digits II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2176-counting-bishops"><span class="toc-number">2.51.</span> <span class="toc-text">
-           2176 - Counting Bishops</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2432-grid-puzzle-i"><span class="toc-number">2.52.</span> <span class="toc-text">
-           2432 - Grid Puzzle I</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2131-grid-puzzle-ii"><span class="toc-number">2.53.</span> <span class="toc-text">
-           2131 - Grid Puzzle II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1080-empty-string"><span class="toc-number">2.54.</span> <span class="toc-text">
-           1080 - Empty String</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1078-grid-paths"><span class="toc-number">2.55.</span> <span class="toc-text">
-           1078 - Grid Paths</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2115-bit-substrings"><span class="toc-number">2.56.</span> <span class="toc-text">
-           2115 - Bit Substrings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2075-reversal-sorting"><span class="toc-number">2.57.</span> <span class="toc-text">
-           2075 - Reversal Sorting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2421-counting-reorders"><span class="toc-number">2.58.</span> <span class="toc-text">
-           2421 - Counting Reorders</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1159-book-shop-ii"><span class="toc-number">2.59.</span> <span class="toc-text">
-           1159 - Book Shop II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1677-network-breakdown"><span class="toc-number">2.60.</span> <span class="toc-text">
-           1677 - Network Breakdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1203-visiting-cities"><span class="toc-number">2.61.</span> <span class="toc-text">
-           1203 - Visiting Cities</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2184-missing-coin-sum-queries"><span class="toc-number">2.62.</span> <span class="toc-text">
-           2184 - Missing Coin Sum Queries</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1157-number-grid"><span class="toc-number">2.63.</span> <span class="toc-text">
-           1157 - Number Grid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1148-maximum-building-ii"><span class="toc-number">2.64.</span> <span class="toc-text">
-           1148 - Maximum Building II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2423-filling-trominos"><span class="toc-number">2.65.</span> <span class="toc-text">
-           2423 - Filling Trominos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1161-stick-divisions"><span class="toc-number">2.66.</span> <span class="toc-text">
-           1161 - Stick Divisions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1665-coding-company"><span class="toc-number">2.67.</span> <span class="toc-text">
-           1665 - Coding Company</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1699-flight-route-requests"><span class="toc-number">2.68.</span> <span class="toc-text">
-           1699 - Flight Route Requests</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1705-forbidden-cities"><span class="toc-number">2.69.</span> <span class="toc-text">
-           1705 - Forbidden Cities</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1741-area-of-rectangles"><span class="toc-number">2.70.</span> <span class="toc-text">
-           1741 - Area of Rectangles</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1752-creating-offices"><span class="toc-number">2.71.</span> <span class="toc-text">
-           1752 - Creating Offices</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1075-permutations-ii"><span class="toc-number">2.72.</span> <span class="toc-text">
-           1075 - Permutations II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2415-functional-graph-distribution"><span class="toc-number">2.73.</span> <span class="toc-text">
-           2415 - Functional Graph Distribution</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1685-new-flight-routes"><span class="toc-number">2.74.</span> <span class="toc-text">
+           2174 - Removing Digits II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2180-coin-arrangement"><span class="toc-number">2.51.</span> <span class="toc-text">
+           2180 - Coin Arrangement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2176-counting-bishops"><span class="toc-number">2.52.</span> <span class="toc-text">
+           2176 - Counting Bishops</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2432-grid-puzzle-i"><span class="toc-number">2.53.</span> <span class="toc-text">
+           2432 - Grid Puzzle I</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2131-grid-puzzle-ii"><span class="toc-number">2.54.</span> <span class="toc-text">
+           2131 - Grid Puzzle II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1080-empty-string"><span class="toc-number">2.55.</span> <span class="toc-text">
+           1080 - Empty String</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1078-grid-paths"><span class="toc-number">2.56.</span> <span class="toc-text">
+           1078 - Grid Paths</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2115-bit-substrings"><span class="toc-number">2.57.</span> <span class="toc-text">
+           2115 - Bit Substrings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2075-reversal-sorting"><span class="toc-number">2.58.</span> <span class="toc-text">
+           2075 - Reversal Sorting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2421-counting-reorders"><span class="toc-number">2.59.</span> <span class="toc-text">
+           2421 - Counting Reorders</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1159-book-shop-ii"><span class="toc-number">2.60.</span> <span class="toc-text">
+           1159 - Book Shop II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1677-network-breakdown"><span class="toc-number">2.61.</span> <span class="toc-text">
+           1677 - Network Breakdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1203-visiting-cities"><span class="toc-number">2.62.</span> <span class="toc-text">
+           1203 - Visiting Cities</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2184-missing-coin-sum-queries"><span class="toc-number">2.63.</span> <span class="toc-text">
+           2184 - Missing Coin Sum Queries</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1157-number-grid"><span class="toc-number">2.64.</span> <span class="toc-text">
+           1157 - Number Grid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1148-maximum-building-ii"><span class="toc-number">2.65.</span> <span class="toc-text">
+           1148 - Maximum Building II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2423-filling-trominos"><span class="toc-number">2.66.</span> <span class="toc-text">
+           2423 - Filling Trominos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1161-stick-divisions"><span class="toc-number">2.67.</span> <span class="toc-text">
+           1161 - Stick Divisions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1665-coding-company"><span class="toc-number">2.68.</span> <span class="toc-text">
+           1665 - Coding Company</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1699-flight-route-requests"><span class="toc-number">2.69.</span> <span class="toc-text">
+           1699 - Flight Route Requests</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1705-forbidden-cities"><span class="toc-number">2.70.</span> <span class="toc-text">
+           1705 - Forbidden Cities</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1741-area-of-rectangles"><span class="toc-number">2.71.</span> <span class="toc-text">
+           1741 - Area of Rectangles</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1752-creating-offices"><span class="toc-number">2.72.</span> <span class="toc-text">
+           1752 - Creating Offices</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1075-permutations-ii"><span class="toc-number">2.73.</span> <span class="toc-text">
+           1075 - Permutations II</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2415-functional-graph-distribution"><span class="toc-number">2.74.</span> <span class="toc-text">
+           2415 - Functional Graph Distribution</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1685-new-flight-routes"><span class="toc-number">2.75.</span> <span class="toc-text">
            1685 - New Flight Routes</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/sharo2.png" alt="avatar"></div><p class="sidebar-ov-author__text">abc864197532</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/abc864197532" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://codeforces.com/profile/abc864197532" target="_blank" rel="noopener" data-popover="Codeforces" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CF</span></a><a class="sidebar-ov-social-item" href="https://atcoder.jp/users/abc864197532" target="_blank" rel="noopener" data-popover="Atcoder" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">AtC</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">25</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">18</div><div class="sidebar-ov-state-item__name">Tags</div></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>abc864197532</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="0,0,255" opacity="0.6" count="99" zIndex="-1"></script><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" rel="stylesheet" type="text/css"><link href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.css" rel="stylesheet" type="text/css"><script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
