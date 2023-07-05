@@ -40,8 +40,8 @@ https://abc864197532.github.io/tags/Beginning/
 https://abc864197532.github.io/tags/BOI/
 https://abc864197532.github.io/tags/Data-Structure/
 https://abc864197532.github.io/tags/Tree/
-https://abc864197532.github.io/tags/GCJ/
 https://abc864197532.github.io/tags/CSES/
+https://abc864197532.github.io/tags/GCJ/
 https://abc864197532.github.io/tags/JOISC/
 https://abc864197532.github.io/tags/Note/
 https://abc864197532.github.io/tags/Math/
