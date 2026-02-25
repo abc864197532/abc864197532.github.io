@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icon16.png" type="image/png" sizes="16x16"><link rel="icon" href="/images/icon32.png" type="image/png" sizes="32x32"><meta name="description" content="前言        早安，首先有在打 CF 的話應該就會發現我和 dannyboy 出了一場比賽，總之就稍微打一下心得吧 台灣好像除了 dreamoon 好像也沒什麼人會在 CF 出題，總之如果有人有興趣的話可以參考看看 &gt; &lt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces Round 772 出題心得">
+<meta property="og:url" content="https://abc864197532.github.io/2022/02/21/CF772/index.html">
+<meta property="og:site_name" content="abc&#39;s Blog">
+<meta property="og:description" content="前言        早安，首先有在打 CF 的話應該就會發現我和 dannyboy 出了一場比賽，總之就稍微打一下心得吧 台灣好像除了 dreamoon 好像也沒什麼人會在 CF 出題，總之如果有人有興趣的話可以參考看看 &gt; &lt;">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-02-20T19:14:35.000Z">
+<meta property="article:modified_time" content="2022-02-21T21:38:04.000Z">
+<meta property="article:author" content="abc864197532">
+<meta property="article:tag" content="Codeforces">
+<meta property="article:tag" content="Experience">
+<meta name="twitter:card" content="summary"><title>Codeforces Round 772 出題心得 | abc's Blog</title><link ref="canonical" href="https://abc864197532.github.io/2022/02/21/CF772/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":false,"scrollDownIcon":false},
+  postWidget: undefined,
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"ocean","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner header-inner--height header-inner--bgcolor"><nav class="header-nav header-nav--sticky"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">Tags</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/about/"><span class="header-nav-menu-item__icon"><i class="far fa-address-card"></i></span><span class="header-nav-menu-item__text">About</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">Codeforces Round 772 出題心得</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2022-02-21</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2022-02-22</span></span></div></header><div class="post-body">
+        <h2 id="前言"   >
+          <a href="#前言" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+      
+<p>早安，首先有在打 CF 的話應該就會發現我和 dannyboy 出了一場比賽，總之就稍微打一下心得吧<br />
+台灣好像除了 dreamoon 好像也沒什麼人會在 CF 出題，總之如果有人有興趣的話可以參考看看 &gt; &lt;</p>
+<span id="more"></span>
+<p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://codeforces.com/contest/1635" >題目連結</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+
+        <h2 id="歷程"   >
+          <a href="#歷程" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#歷程"></a> 歷程</h2>
+      
+
+        <h3 id="起初"   >
+          <a href="#起初" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#起初"></a> 起初</h3>
+      
+<p>去年 6 月初的時候，dannyboy 跟我說他出了一題 (Closest Pair 的原始版本) ，然後看一看我覺得這題很棒，感覺可以當 Div2.F，然後剛好我那時手邊還有兩題可能可以當 div2.D 和 E 的題目，就問說有沒有興趣出個 Div2 Round，然後他就爽快的答應了orz</p>
+<p>後來我們就花了幾天把 pABC 生一生，然後就丟到 problem proposal 上去了，原本就有聽說不會很快有回應，總之就慢慢等</p>
+<p>當然等待的過程還是有發生一些事，像是忽然發現 pD 跟 CF 某題做法有點像，所以後來又花了一些時間把它變難，然後 Closest Pair 改成現在的版本之類的</p>
+<p>之後等到大概 11 月中吧，KAN 就來初步審過題目，然後毫不意外的 pD 被 reject = =</p>
+<p>後來這題我把他丟給學弟當讀書會期末考<s>防破台題</s>，所以也不會用了，有人有興趣的話可以看一下：</p>
+<p>「有一個隱藏的 abc 字串 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">s</span></span></span></span> 你要猜到它，一開始 judge 會給你隱藏字串的長度，你每次可以詢問 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">s</span></span></span></span> 與另一個 abc 字串的 LCS 長度，你最多可以猜 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⌈</mo><mfrac><mrow><mn>3</mn><mi>n</mi></mrow><mn>2</mn></mfrac><mo stretchy="false">⌉</mo></mrow><annotation encoding="application/x-tex">\lceil \frac{3n}{2} \rceil</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mopen">⌈</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">⌉</span></span></span></span> 次，其中 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> 為隱藏字串長度，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">3 \leq n \leq 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span>」</p>
+<p>現在想想，這題難度根本超過 D 了吧，畢竟當初我也想蠻久的</p>
+<p>因為其實一直都有在擔心 reject，所以就把我另外想的題目 (Cars) 丟上去，總之就過了</p>
+<p>然後 KAN 就派了 74TrAkToR 當作我們的 coordinator</p>
+
+        <h3 id="出題"   >
+          <a href="#出題" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#出題"></a> 出題</h3>
+      
+<p>之後當然就是開始出題，把東西弄到 polygon 上去</p>
+<p>平常我就會出一些讀書會的比賽所以還算熟悉，但其實他還會用到平常很少用的功能，像是 stress 之類的，總之也花了不少時間搞懂用法</p>
+<p>真的要說的話我覺得花我最久的時間是打題敘、題解還有生測資，因為我比較會是容易胡思亂想的人，所以就不時會擔心 pretest 不夠強讓一堆人 FST，導致我 pA 以外的 pretest 都至少改過 10 次吧 XD</p>
+<p>至於題敘和題解的部分… 我英文就不好，沒辦法QQ</p>
+<p>總之到這裡都還算順利，但大概 12 月中的時候不知道為啥，pE 因為一個莫名其妙的原因就被 reject 了，因為這題我還想先留著，所以先不講</p>
+<p>後來就又花了一堆時間想新的 pE，導致我新年跟家人出去玩也還在想 XD<br />
+這時候也差不多開始了只有五題的 testing，然後當時的兩個 tester 都覺得 Cars 可以當 pE，所以就把 Cars 變成 pE，然後變成要想 pD</p>
+<p>沒記錯我當時還立了一個 flag 說想新的 pD 會比較簡單，結果我和 dannyboy 接連丟了 5 還 6 題，都因為難度太難、coordinator 覺得太 standard 之類的原因被 reject</p>
+<p>後來真的沒辦法了，就跟 tester 問問看有沒有 pD 的 idea，後來 generic_placeholder_name 提出了一個 idea，之後 dannyboy 再包裝一下就變成現在的 pD 了 (Infinite Set)</p>
+<p>再後來一月底的時候 coordinator 又嫌原本的 pC 太 standard，整天在追殺說想到新題了沒 XD</p>
+<p>後來想了很久 dannyboy 才又想出最後的 pC (Differential Sorting)，差點又要用 tester 的 idea 了 = =</p>
+<p>總之這樣，完整的題目就大概產出來了</p>
+<p>但其實細節還是修了不少，像是變數的範圍之類的 (?</p>
+<p>其實除了 pAB 其他都修了不少，詳細可以看下面每一題的個別說明</p>
+
+        <h3 id="驗題"   >
+          <a href="#驗題" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#驗題"></a> 驗題</h3>
+      
+<p>關於驗題的部分，大概就是 tester vir / 補題之後給題目一些建議，然後再去修改</p>
+<p>而這步驟其實是會和出題並行的，不會說完整出完才驗題，不然太慢了</p>
+<p>有的人可能會好奇是怎麼驗的，但驗題其實就只是把題目丟到一個 mashup 裡面，然後當一般的 round 在打而已</p>
+<p>驗題我覺得蠻重要的是 tester 寫出來的 code，可以用來跑 stress，看看 TL、ML 到底合不合理，然後假解的話可以生些 hack test 之類的</p>
+<p>另外就是有時候 tester 可以幫忙抓一些我們沒注意到的題目細節 XD</p>
+<p>還有就是我其實對題目品質蠻沒信心的，也感謝許多 tester 都對我們的題目評價蠻不錯的，讓我有了信心owo</p>
+<p>還記得第一位 tester 驗的時候說 Cars 很有趣讓我很開心，因為在那之前我一直覺得那題不太 OK</p>
+<p>我們在驗題的時候也發現 pD 的難度其實和 pE 差不多，所以最後就把他們的分數設成一樣</p>
+<p><s>雖然最後的結果不是這樣就是了</s></p>
+<p>題外話是我們的 coordinator 覺得 pAB 的 sample 要越強越好，所以要盡量讓 tester 的 WA 出現在 WA1</p>
+<p>這點我是不太支持就是了，畢竟有寫 pB 的話就會知道那是 greedy 題，應該很多人賽中都是看範測猜結論過的 = =</p>
+
+        <h3 id="比賽"   >
+          <a href="#比賽" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#比賽"></a> 比賽</h3>
+      
+<p>比賽中的話我們要做的事情大概就是回 question，其實有些人問的問題真的蠻好笑的www</p>
+<p>pC 和 pE 到後面直接被問爆，pC 一堆人問說相同是不是 non-decreasing，還有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>18</mn></msup></mrow><annotation encoding="application/x-tex">10^{18}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span></span> 這個 bound 是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo></mrow><annotation encoding="application/x-tex">&lt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span></span></span></span> 還是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mrel">≤</span></span></span></span></p>
+<p>前面可能真的是我們的問題，畢竟好像本來就該在題目裡面再講一次</p>
+<p>但後面我明明就寫得很清楚了 = =</p>
+<p>pE 的話則是一堆人問 test2 為什麼是 NO，同向是 irrelevant 還是 destined，還有每輛車子的速度是不是可以不一樣之類的</p>
+<p>回答的話 1 和 2 講了就暴雷了 = =，所以我一律都回 read the problem statement<br />
+3 的話題目裡面明明就也有講 = =</p>
+<p>總之，回到後面其實有點不爽就是了 = =，不過也在這裡也感謝 Fysty 和 8e7 提醒或直接幫我打出我要回的東西，畢竟我英文不太好對事情的反應速度也沒到很快 =w=</p>
+<p>另外就是其實在比賽中，judge 會跑一個叫做 shadow test 的東西，他會從 pretest passed 挑一些出來跑 main test，讓我們可以先知道 pretest 的狀況怎樣</p>
+<p>原本我蠻擔心 pretest 會不會不夠強，以結果來看基本上還算可以，大概只有 1% 的人 FST 吧</p>
+<p><s>我還是很好奇為啥有人 pA 可以 FST，不過就算了吧</s></p>
+<p>另外，賽中其實我頗擔心 pE 的，畢竟跟預期的人數差太多 (預期跟 D 差不多)</p>
+<p>再加上又一堆人來問 pE 的問題，讓我有點怕會不會是題目寫得不清楚</p>
+<p>後來還好沒有甚麼人嘴這一點</p>
+<p>總之，基本上還算蠻順利的結束了 owo</p>
+<p>以結果來看，比賽後的 announcement upvote 還有上升，代表這場比賽應該也還算不錯…吧 (?</p>
+
+        <h2 id="題目"   >
+          <a href="#題目" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#題目"></a> 題目</h2>
+      
+<p>以下就稍微講一下每一題的小故事</p>
+
+        <h3 id="pa"   >
+          <a href="#pa" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#pa"></a> pA</h3>
+      
+<p>整單唯一幾乎沒動過的題目，唯一的改動是把輸出解拔掉</p>
+<p>除此之外對這題沒啥感覺，畢竟只是當時亂出的而已 =w=</p>
+<p>打題解的時候其實想蠻久要怎麼打的 XD</p>
+<p>原本是想用拆 bit 的想法寫，但後來覺得這樣寫太長就變現在這樣了</p>
+
+        <h3 id="pb"   >
+          <a href="#pb" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#pb"></a> pB</h3>
+      
+<p>這題的由來單純是因為原本的 pF 版本 (環狀的 case) 的做法會跟 local maximum 有關，然後 dannyboy 想給一些提示就出了這題 XD</p>
+<p>然後原本的題目是「給一個可以包含 -1 的 array，問把所有 -1 填上任意數後能不能讓 array 沒有 local maximum」，後來覺得現在的版本比較好就改上去了</p>
+<p>另外這題我想了很久 pretest 要怎麼生，後來的作法是 test2 把所有滿足 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≤</mo><mn>10</mn><mo separator="true">,</mo><mn>1</mn><mo>≤</mo><msub><mi>a</mi><mi>i</mi></msub><mo>≤</mo><mn>3</mn><mo separator="true">,</mo><msub><mi>a</mi><mi>i</mi></msub><mo mathvariant="normal">≠</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">n \leq 10, 1 \leq a_i \leq 3, a_i \neq a_{i + 1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7859700000000001em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span> 的陣列都暴力建出來，剩下再多補一些值域的 corner case 和 random case，而 test3 就是直接塞一個 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>200000</mn></mrow><annotation encoding="application/x-tex">n = 200000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span> 的 test</p>
+<p>以結果來看，我賽中亂戳 FST 的 code 基本上都是戳到陣列外面之類很難卡的情況，所以應該還算強 (?</p>
+
+        <h3 id="pc"   >
+          <a href="#pc" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#pc"></a> pC</h3>
+      
+<p>原本的 pC 因為太 standard 而被拔掉，就換成這題了</p>
+<p>其實我不認為原本那題有甚麼不好，只是就是有點無腦，而且有的 tester 認為太實作 (???</p>
+<p>但其實官解不到 15 行 = =</p>
+<p>另外有一個小趣事是一開始想不出 pC 的時候一位 tester 和 coordinator 有合出一題，但被 Fysty 抓到假解，一堆人都沒發現假解 XD</p>
+<p>回到原本這題，這題是原本的版本是原陣列全部都是正數，但被 coordinator 嫌太水就變成現在的樣子了</p>
+<p>dannyboy 對於這件事有點不開心</p>
+
+        <h3 id="pd"   >
+          <a href="#pd" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#pd"></a> pD</h3>
+      
+<p>前面提到這題是從 tester 的 idea 來的，原本 tester 的題目是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n = 1, a_1 = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 的 case，總之 coordinator 是同意了，我到現在還是不懂為什麼這樣可以當 pD 就是了 = =</p>
+<p>是還好後來 dannyboy 想到改的方法，不然原本這題當 pD 真的有點智障</p>
+<p>小趣事是在比賽前一周 coordinator 叫我們從原本的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>≤</mo><mn>2</mn><mo>⋅</mo><mn>1</mn><msup><mn>0</mn><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">a_i \leq 2 \cdot 10^5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7859700000000001em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span> 改成 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup></mrow><annotation encoding="application/x-tex">a_i \leq 10^9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7859700000000001em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span></span></span></span></p>
+<p>雖然我覺得沒意義，不過還是就這樣做了</p>
+<p>另一個小趣事是這題是唯一在 testing 的時候有被戳到 FST 的題目</p>
+<p>還有賽前大概兩天 FHVirus 傳了一份假解還附上 hack test，蠻感謝他的，賽中看那筆 hack test 賽中偷戳了 下好像卡掉了一堆人www</p>
+
+        <h3 id="pe"   >
+          <a href="#pe" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#pe"></a> pE</h3>
+      
+<p>這題的 idea 來源是去年暑假準備資格考在寫自然科的時候，我就盯著題目在想跟多選題猜題有關的事情，然後就想到這題的雛型了 XD</p>
+<p>大致就是我們看選項可以推出有哪些選項是「互斥」的關係 (選 A 就不會選 B)，哪些是「包容」的關係 (一定會選 A 或選 B)，想了一下覺得可以變成構造題，但要解釋那些關係有點複雜，所以一開始的題目是用數學集合的形式寫的</p>
+<p>後來因為這樣太數學就被 coordinator 說要改，又想了蠻久才想到現在題目的樣子</p>
+<p>然後我始終覺得他該放在 pD，放在 pE 有點太誇張了 = =</p>
+<p>雖然以結果來看，他確實該被放在 pE (?</p>
+<p>但我還是不覺得他有到 pE 的難度就是了 = =</p>
+<p>另外，很多人可能會嫌太 standard 或太實作，其實那時候在生 pD 的時候我有想到一題可能可以當 pE 的梗題，所以我有在思考要不要把 pE 換掉。後來沒有這樣做的原因是 pD 其實是偏梗的，我想說想不到梗還有實作題可以寫的話好像也不錯(? 所以就沒有換也甚至沒有提過了</p>
+<p>說到底，我完全不排斥甚至比較頃向在 div.2 塞偏 standard 的題</p>
+<p>雖說沒換，但我總覺得他還是有點裸，也嘗試了很久要怎麼把它包裝的更好一些，但真的沒啥好的想法</p>
+
+        <h3 id="pf"   >
+          <a href="#pf" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#pf"></a> pF</h3>
+      
+<p>這題一開始的原始版本是「給一個環狀序列，問整個序列的 weighted-closest distance」，後來被<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://csacademy.com/contest/archive/task/closest-numbers/" >這題</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>啟發了，就變成序列然後區間詢問了 XD</p>
+<p>然後區間詢問的版本一開始被 KAN 說難度沒到 Div2.F，我很生氣因為我真的覺得很難</p>
+<p>以結果來看，這題確實有到 Div2.F 的難度，應該吧</p>
+<p>算是整份我最喜歡的題目吧，那個觀察實在有夠精妙</p>
+<p>這題有一個小故事是在一月初的時候 coordinator 說要把它分成 easy version 和 hard version，easy 是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 且 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>l</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo separator="true">,</mo><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">l_1 = 1, r_1 = n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.01968em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> 的 case</p>
+<p>後來為什麼沒有呢？首先，如果你會這題的話會發現兩個版本根本就長的一樣，只是 hard version 需要用資節處理詢問</p>
+<p>再來就是技術層面的問題，我們想了很久但卻卡不掉這個假解：</p>
+<figure class="highlight cpp"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">lli ans = INF;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = i - <span class="number">1</span>; ~j; --j) &#123;</span><br><span class="line">		ans = <span class="built_in">min</span>(ans, (x[i] - x[j]) * (w[i] + w[j]));</span><br><span class="line">		<span class="keyword">if</span> (ans &lt;= (x[i] - x[j]) * w[i])</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></div></figure>
+<p>如果有人 hack 掉的話歡迎聯繫我，因為我真的很好奇這到底 484 能 hack 的<br />
+主要是題目的性質我猜測他可能最差只會跑到 logC</p>
+<p>總之後來雖然 8e7 有想到一個 easy version 的解，但後來還是拔掉了</p>
+
+        <h2 id="心得"   >
+          <a href="#心得" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#心得"></a> 心得</h2>
+      
+<p>整體過程其實算是蠻有趣的，雖然有點累，而且中間想不到題的時候真的有點崩潰想放棄 = =</p>
+<p>這也算是達成一開始的一個小夢想吧，前年二月上紫之後忽然冒出一個 contest proposal 的按鈕就想要出出看 round 了 XD</p>
+<p>還是特別感謝 dannyboy 的強力凱瑞，他真的出了一堆題讓我在出題這塊可以爽爽躺分</p>
+<p>最後稍微講一下我對在 CF 出題的看法好了 XD</p>
+<p>首先，CF 並不接受只出單題，你要出就要出一整個 Round，所以除非你夠強，不然通常都要找人合作，畢竟一個人其實很難顧慮到全面難度的題目</p>
+<p>而且在 CF 出題還要先過 coordinator 這關，事情大多會由 coordinator 決定，而不是你自己</p>
+<p>舉例來說，我其實不認為在 Div2 塞經典題有什麼不好，以原本 pC 還沒被改的情況，我認為 pC 和 pE 都偏 standard 也不會怎樣，只是 coordinator 就是不同意，最後就把 pC 換掉ㄌ = =</p>
+<p>另外還有比較現實的問題，就是 CF 出題比在其他地方出題還要累好多，然後錢還給的比較少 XD</p>
+<p>我去年暑假有在 codechef 亂丟一題，當時的工作量就比這次少了非常多。當然題目變多本來就會比較累，但在 CF 出題有更多細節需要注意</p>
+<p>當然 CF 還是有不少好處啦，其中最大的好處寫的人真的比較多，我丟到 codechef 的那題我估難度體感頂多 2200 吧，然而事實上 AC 的人只有 30 幾個，這放在 CF 上至少會有 200 或 300 人吧</p>
+<p>總之，個人的看法是如果是為了夢想或是想讓更多人寫你的題目的話，那 CF 絕對是個丟題的好地方，然而如果你只是單純想要體驗看看當出題者的感覺，那我會建議丟到 codechef，畢竟那裡只要一題就能丟，出一整份題單實在是太累了 XD，更現實一點講，錢還比較多</p>
+<p>至於會不會有下一場 CF Round 呢？我覺得很難了 XD。主要還是出 CF Round 實在是有點累，而且我在出題這塊實在沒有到特別擅長，往往要想很久才會想出一題，而出出來的題也大多偏 standard，沒有到很適合現在 CF 的生態</p>
+<p>當然我還是蠻喜歡出題的，畢竟看著參賽者寫出自己出的題就會有種說不出的感動 (?</p>
+<p>總之，還是希望大家能享受這場比賽，也希望我能夠有更多靈感可以繼續出題 (?</p>
+
+        <h2 id="其他"   >
+          <a href="#其他" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#其他"></a> 其他</h2>
+      
+<ol>
+<li>
+<p>被好友人數在這兩天多了 30 幾個，然後有 4 個人來問我能不能當 tester，5 個人來問一些競程的問題 ???</p>
+</li>
+<li>
+<p>比賽的時候跟 codechef 的 Feb cook-off 完全撞時，然後 codechef 的 admin 還跑來私我問說我們能不能改期<br />
+因為我不想再延，而且我們明明也在一個月前就公告了 = =，所以就拒絕了<br />
+然後後來 codechef 就自己延期了，笑死，<s>codechef 還是不敢跟 CF 撞</s></p>
+</li>
+<li>
+<p>有 tester 在 announcement 下面嗆中國人，然後就被一堆中國人制裁了</p>
+</li>
+<li>
+<p>居然在 div2 也能看到友列排到第二頁 (?，還蠻感動的</p>
+</li>
+<li>
+<p>contribution 賺了 100 多，應該是夠花一輩子了</p>
+</li>
+</ol>
+</div><footer class="post-footer"><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://abc864197532.github.io/tags/Codeforces/">Codeforces</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://abc864197532.github.io/tags/Experience/">Experience</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2022/04/03/toi-2022-1/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">TOI 2022 1!</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2021/12/18/nhspc-2021/"><span class="paginator-prev__text">全國資訊能力競賽 2021</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">
+           前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%B7%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">
+           歷程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%B7%E5%88%9D"><span class="toc-number">2.1.</span> <span class="toc-text">
+           起初</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BA%E9%A1%8C"><span class="toc-number">2.2.</span> <span class="toc-text">
+           出題</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A9%97%E9%A1%8C"><span class="toc-number">2.3.</span> <span class="toc-text">
+           驗題</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%94%E8%B3%BD"><span class="toc-number">2.4.</span> <span class="toc-text">
+           比賽</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%8C%E7%9B%AE"><span class="toc-number">3.</span> <span class="toc-text">
+           題目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pa"><span class="toc-number">3.1.</span> <span class="toc-text">
+           pA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pb"><span class="toc-number">3.2.</span> <span class="toc-text">
+           pB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pc"><span class="toc-number">3.3.</span> <span class="toc-text">
+           pC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pd"><span class="toc-number">3.4.</span> <span class="toc-text">
+           pD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pe"><span class="toc-number">3.5.</span> <span class="toc-text">
+           pE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pf"><span class="toc-number">3.6.</span> <span class="toc-text">
+           pF</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%83%E5%BE%97"><span class="toc-number">4.</span> <span class="toc-text">
+           心得</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">5.</span> <span class="toc-text">
+           其他</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/umika.png" alt="avatar"></div><p class="sidebar-ov-author__text">abc864197532</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/abc864197532" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://codeforces.com/profile/abc864197532" target="_blank" rel="noopener" data-popover="social.codeforces" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">CF</span></a><a class="sidebar-ov-social-item" href="https://atcoder.jp/users/abc864197532" target="_blank" rel="noopener" data-popover="social.atcoder" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">AtC</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">33</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">19</div><div class="sidebar-ov-state-item__name">Tags</div></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2026</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>abc864197532</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v8.1.1</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="0,0,255" opacity="0.6" count="99" zIndex="-1"></script><link href="https://cdn.jsdelivr.net/npm/katex@0.16.33/dist/katex.min.css" rel="stylesheet" type="text/css"><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
